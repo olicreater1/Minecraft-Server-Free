@@ -1,7 +1,7 @@
-link =
+echo Paste Link For Server Files
+read link
 mkdir server
 cd server
-wget link
+wget $link
 filename=$(find . -maxdepth 1 -name '.jar*')
-filename = 
-java -jar filename -nogui
+java -jar $filename -nogui

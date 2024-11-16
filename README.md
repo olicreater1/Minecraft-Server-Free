@@ -8,5 +8,5 @@ This is a program that runs on linux, i personally use oracle cloud, but anythin
 4. Wait for run script to be created, then run it by doing ./Run.sh
 5. Play your server by typing in the ip adress of the hosting server
 # Trouble Shooting
-If you never set up a server before you may need to forward the minecraft port to make it work
-If you have a server directroy already you may need to rename or delete it for the script to work
+-If you never set up a server before you may need to forward the minecraft port to make it work
+-If you have a server directroy already you may need to rename or delete it for the script to work

@@ -31,6 +31,7 @@ if file server.jar | grep -q 'Java archive'; then
     echo "eula=true" > eula.txt
 
     # Create a run script
+    echo "#!/bin/bash" > run.sh
     echo "java -jar server.jar -nogui" > run.sh
     chmod +x run.sh
 

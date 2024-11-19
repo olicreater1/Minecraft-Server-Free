@@ -1,3 +1,4 @@
+#!/bin/bash
 echo Paste Link For Server Files
 read link
 mkdir server

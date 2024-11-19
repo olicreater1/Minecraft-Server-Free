@@ -35,7 +35,7 @@ if file server.jar | grep -q 'Java archive'; then
     chmod +x run.sh
 
     # Clean up
-    rm ../LinuxServerInstall.sh
+    rm LinuxServerInstall.sh
 else
     # Print error message if the file is not a valid JAR file
     echo "Error: The downloaded file is not a valid JAR file or download failed."

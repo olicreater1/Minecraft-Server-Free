@@ -6,11 +6,11 @@ read link
 echo "Link provided: $link"
 
 # Create server directory
-mkdir -p server
+mkdir server
 cd server
 
 # Download the file
-wget -O server.jar "$link"
+wget server.jar "$link"
 
 # Debug message to verify the download
 if [ -f server.jar ]; then
@@ -28,7 +28,11 @@ if file server.jar | grep -q 'Java archive'; then
     java -jar server.jar -nogui
 
     # Accept the EULA
-    echo "eula=true" > eula.txt
+    read -p "Accept EULA? (Y/N): " answer
+    case $answer in
+        [Yy]* ) echo "eula=true" > eula.txt;;
+        [Nn]* ) echo "EULA Denied";;
+        
 
     # Create a run script
     echo "#!/bin/bash" > run.sh

@@ -1,5 +1,5 @@
 # Free Minecraft Server
-This is a program that runs on linux, i personally use oracle cloud, but anything can be used in this case. 
+This is a program that runs on linux, I personally use oracle cloud, but anything can be used in this case. 
 
 # Steps
 1. Install this file through wget or sftp

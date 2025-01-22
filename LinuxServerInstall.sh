@@ -10,7 +10,7 @@ mkdir server
 cd server
 
 # Download the file
-wget server.jar "$link"
+wget -O server.jar "$link"
 
 # Debug message to verify the download
 if [ -f server.jar ]; then
@@ -32,7 +32,7 @@ if file server.jar | grep -q 'Java archive'; then
     case $answer in
         [Yy]* ) echo "eula=true" > eula.txt;;
         [Nn]* ) echo "EULA Denied";;
-        
+    esac
 
     # Create a run script
     echo "#!/bin/bash" > run.sh
@@ -40,7 +40,7 @@ if file server.jar | grep -q 'Java archive'; then
     chmod +x run.sh
 
     # Clean up
-    rm LinuxServerInstall.sh
+    rm ../LinuxServerInstall.sh
 else
     # Print error message if the file is not a valid JAR file
     echo "Error: The downloaded file is not a valid JAR file or download failed."

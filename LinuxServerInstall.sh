@@ -1,4 +1,17 @@
 #!/bin/bash
+
+# Check if wget is installed
+if ! command -v wget &> /dev/null; then
+    echo "Error: wget is not installed. Please install wget and try again."
+    exit 1
+fi
+
+# Check if Java is installed
+if ! command -v java &> /dev/null; then
+    echo "Error: Java is not installed. Please install Java and try again."
+    exit 1
+fi
+
 echo "Paste Link For Server Files:"
 read link
 

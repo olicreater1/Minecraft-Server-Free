@@ -15,3 +15,4 @@ This is a program that runs on linux, I personally use oracle cloud to run this,
 1. If you never set up a server before you may need to forward the minecraft port (25565) through the server's firewall to make it work
 2. If you have a server directroy already you may need to rename or delete it for the script to work
 3. If Java, Wget, or other nececairy archetecture for this to run, it will not work
+4. Use the correct Java version for your Mineraft version Ex: Java 8 for 1.12 or Java 22 for 1.21 

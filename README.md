@@ -1,5 +1,5 @@
 # Free Minecraft Server
-This is a program that runs on linux, I personally use oracle cloud to run this, but anything can be used in this case. 
+This is a program that runs on Linux, I personally use Oracle Linux to run this, but anything can be used in this case as long as propper command infastructure is available. 
 
 # System Requirements
 4-5 G or more ram is optimal but more can be used for larger scale servers
